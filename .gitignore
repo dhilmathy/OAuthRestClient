@@ -1,0 +1,23 @@
+# Visual Studio
+/.vs/
+
+# NuGet
+packages/
+*.nupkg
+
+# User settings
+*.user
+*.suo
+
+# Build output
+*.obj
+*.exe
+*.pdb
+bin/
+obj/
+[D]ebug/
+[R]elease/
+
+# Test Solution / Project
+/MsalRestClientTest/
+OAuthRestClientTest.sln
