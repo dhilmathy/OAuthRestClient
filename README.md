@@ -1,8 +1,8 @@
-# TfL-python-api
+# OAuth REST Client
 
 [![License](https://img.shields.io/pypi/l/sfctl.svg)](https://github.com/dhilmathy/OAuthRestClient/blob/master/LICENSE)
 
-This is simple, light package created using MSAL to access REST API with OAuth authentication.
+This is simple, light package created using Microsoft Authentication Library ([MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet)) to access REST API using OAuth2 and OpenID Connect authentication.
 
 ## Get Started
 

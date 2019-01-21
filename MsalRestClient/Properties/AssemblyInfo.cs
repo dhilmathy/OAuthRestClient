@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MsalRestClient")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This is simple, light package created using Microsoft Authentication Library (MSAL) to access REST API using OAuth2 and OpenID Connect authentication.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Mathivanan Palanisamy")]
 [assembly: AssemblyProduct("MsalRestClient")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]

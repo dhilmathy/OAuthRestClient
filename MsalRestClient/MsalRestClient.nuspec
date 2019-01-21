@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>OAuthRestClient</id>
+	  <title>OAuthRestClient</title>
+	  <language>csharp</language>
+    <version>1.0.0</version>
+    <authors>Mathivanan Palanisamy</authors>
+    <owners>Mathivanan Palanisamy</owners>
+    <licenseUrl>https://github.com/dhilmathy/OAuthRestClient/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/dhilmathy/OAuthRestClient</projectUrl>
+    <iconUrl>https://www.nuget.org/Content/gallery/img/default-package-icon-256x256.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is simple, light package created using Microsoft Authentication Library (MSAL) to access REST API using OAuth2 and OpenID Connect authentication.</description>
+    <repository type="git" url="https://github.com/dhilmathy/OAuthRestClient.git" />
+    <releaseNotes>Initial 1.0.0 release</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+	<tags>rest api-client msal oauth azure</tags>
+    <dependencies>
+      <dependency id="Microsoft.Identity.Client" version="2.7.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Security" targetFramework=".NETFramework4.5.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
