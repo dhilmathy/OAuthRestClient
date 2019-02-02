@@ -18,12 +18,12 @@ namespace MsalRestClient
             authHelper = new AuthHelper(configProvider);
             jsonSerializer = serializer;
 
-            httpClient = new HttpClient { BaseAddress = configProvider.GetBaseUri() };
+            httpClient = new HttpClient { BaseAddress = configProvider.GetBaseUrl() };
             httpClient.DefaultRequestHeaders.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
         }
         private async Task AcquireTokenAsync()
         {
-            var token = await authHelper.GetTokenForCurrentAccountAsync().ConfigureAwait(false);
+            var token = await authHelper.GetTokenAsync().ConfigureAwait(false);
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         }
 

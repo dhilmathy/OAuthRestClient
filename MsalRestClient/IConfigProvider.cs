@@ -5,7 +5,11 @@ namespace MsalRestClient
 {
     public interface IConfigProvider
     {
-        Uri GetBaseUri();
+        /// <summary>
+        /// Base server URL
+        /// </summary>
+        /// <returns></returns>
+        Uri GetBaseUrl();
 
         /// <summary>
         /// Client ID (also named Application ID) of the application as registered in the
@@ -13,6 +17,16 @@ namespace MsalRestClient
         /// </summary>
         /// <returns></returns>
         string GetClientId();
+        /// <summary>
+        /// URL where the STS will call back the application with the security token. REQUIRED
+        /// </summary>
+        /// <returns></returns>
+        string GetRedirectUri();
+        /// <summary>
+        /// Application secret key
+        /// </summary>
+        /// <returns></returns>
+        string GetClientSecret();
         /// <summary>
         /// Scopes requested to access a protected API
         /// </summary>
