@@ -27,7 +27,7 @@ namespace MsalRestClient
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         }
 
-        public async Task<string> GetAsync(string resource, Dictionary<string, string> parameters = null)
+        public async Task<string> GetAsync(string resource = "", Dictionary<string, string> parameters = null)
         {
             var urlWithParameters = resource;
             if (parameters != null && parameters.Any())
@@ -51,7 +51,6 @@ namespace MsalRestClient
 
         public async Task<T> PostAsync<T>(string resource, string jsonContent, Dictionary<string, string> parameters = null)
         {
-            var jsonPath = resource.Split('/')[0];
             var urlWithParameters = resource;
 
             if (parameters != null && parameters.Any())

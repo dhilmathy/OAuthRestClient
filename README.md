@@ -1,6 +1,7 @@
 # OAuth REST Client
 
 [![License](https://img.shields.io/pypi/l/sfctl.svg)](https://github.com/dhilmathy/OAuthRestClient/blob/master/LICENSE)
+[![NuGet Status](https://img.shields.io/nuget/v/OAuthRestClient.svg)](https://www.nuget.org/packages/OAuthRestClient/)
 
 This is simple, light package created using Microsoft Authentication Library ([MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet)) to access REST API using OAuth2 and OpenID Connect authentication.
 
@@ -19,7 +20,7 @@ namespace MsalRestClientTest
         {
             var configProvider = new ConfigProvider();
             var restClient = new RestClient(configProvider, null);
-            Console.WriteLine(restClient.GetAsync("").Result);
+            Console.WriteLine(restClient.GetAsync().Result);
             Console.ReadLine();
         }
     }
