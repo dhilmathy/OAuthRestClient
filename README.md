@@ -11,6 +11,7 @@ This is simple, light package created using Microsoft Authentication Library ([M
 
 using MsalRestClient;
 using System;
+using System.Collections.Generic;
 
 namespace MsalRestClientTest
 {
@@ -24,8 +25,17 @@ namespace MsalRestClientTest
             Console.ReadLine();
         }
     }
+    
+    class ConfigProvider : IConfigProvider
+    {
+        string GetAuthority() => "https://login.microsoftonline.com/<tenantID>";
+        Uri GetBaseUri() => "";
+        string GetClientID() => "";
+        string GetClientSecret() => ""; // Applicable for app only mode
+        string GetRedirectUri() => "";
+        IEnumerable<string> GetScopes() => new[] { "email" }
+    }
 }
-
 
 ```
 
